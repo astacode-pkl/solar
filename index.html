@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anker SOLIX</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section>
+      <div class="hero">
+        <video autoplay muted playsinline id="heroVideo">
+          <source src="assets/videos/power.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay hidden"></div>
+        <h1 class="hero-text hidden">
+          Modular Build<br />Power That Scales with You
+        </h1>
+      </div>
+    </section>
+
+    <!-- Power Details -->
+    <section class="power-details">
+      <div class="container">
+        <div class="left">
+          <p>
+            Each battery is packed with an innovative energy optimizer for
+            independent charging and discharging, providing more attainable
+            energy.
+          </p>
+          <p>
+            The energy optimizer is what makes the modular design possible,
+            allowing you to scale output and capacity based on your needs.
+          </p>
+        </div>
+        <div class="right">
+          <div class="stat">
+            <h2>5-180kWh | 3.68-72kW</h2>
+            <p>Energy for Your Exact Needs</p>
+          </div>
+          <div class="stat">
+            <h2>0 Energy Loss</h2>
+            <p>While Expanding Capacity</p>
+          </div>
+          <div class="stat">
+            <h2>2000+kWh*</h2>
+            <p>More Attainable Energy</p>
+          </div>
+        </div>
+      </div>
+      <small class="note">
+        *Note: Data based on Anker SOLIX X1 hybrid three-phase 12kW power
+        module.
+      </small>
+    </section>
+
+    <!-- Energy Customized -->
+    <section>
+      <div class="energy-title">
+        <h1>
+          Energy Customized to Your <br />
+          Needs
+        </h1>
+        <p>
+          Scale power to perfectly match your needs with single-phase and
+          three-phase configurations, each with four power modes. Single-phase
+          options range from 3.68kW to 6kW, and three-phase options range from
+          5kW to 12kW.
+        </p>
+      </div>
+
+      <section class="energy-details">
+        <div class="energy-left">
+          <h1>Essential Appliances</h1>
+          <div class="items">
+            <div class="item">
+              <img src="assets/icons/wifi-icon.svg" alt="wifi-icon" />
+              <p>Wi-Fi Router</p>
+            </div>
+            <div class="item">
+              <img src="assets/icons/lights-icon.svg" alt="lights-icon" />
+              <p>Lights</p>
+            </div>
+            <div class="item">
+              <img
+                src="assets/icons/television-icon.svg"
+                alt="television-icon"
+              />
+              <p>Television</p>
+            </div>
+            <div class="item">
+              <img src="assets/icons/laptop-icon.svg" alt="laptop-icon" />
+              <p>Laptop/Home PC</p>
+            </div>
+            <div class="item">
+              <img src="assets/icons/freezer-icon.svg" alt="freezer-icon" />
+              <p>Freezer</p>
+            </div>
+            <div class="item disabled" id="washer">
+              <img src="assets/icons/washer-icon.svg" alt="washer-icon" />
+              <p>Washer/Dryer</p>
+            </div>
+          </div>
+
+          <h1 class="disabled" id="heavy-title">Heavy-Duty Appliances</h1>
+          <div class="items">
+            <div class="item disabled" id="air">
+              <img src="assets/icons/air-icon.svg" alt="air-icon" />
+              <p>Air Conditioner</p>
+            </div>
+            <div class="item disabled" id="dishwasher">
+              <img src="assets/icons/dishwater-icon.svg" alt="dishwater-icon" />
+              <p>Dishwasher</p>
+            </div>
+            <div class="item disabled" id="oven">
+              <img src="assets/icons/oven-icon.svg" alt="oven-icon" />
+              <p>Electric Oven</p>
+            </div>
+            <div class="item disabled" id="pool">
+              <img src="assets/icons/pool-icon.svg" alt="pool-icon" />
+              <p>Pool Pump</p>
+            </div>
+            <div class="item disabled" id="vehicle">
+              <img src="assets/icons/vehicle-icon.svg" alt="vehicle-icon" />
+              <p>Electric Vehicle</p>
+            </div>
+            <div class="item disabled" id="pump">
+              <img src="assets/icons/pump-icon.svg" alt="pump-icon" />
+              <p>Heat Pump</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="energy-right">
+          <div class="energy-info">
+            <h1 id="energy-power">3kW/5kWh</h1>
+            <p id="energy-desc">1 Power Module + 1 Battery Module</p>
+          </div>
+          <div class="add-power" id="power-section">
+            <div class="add-power-container">
+              <p>Add More <br />Power</p>
+              <div id="extra-slot" class="extra-slot"></div>
+            </div>
+
+            <div class="power-wrapper">
+              <img src="assets/img/power.webp" alt="Add More Power" />
+              <div class="plus-icon">+</div>
+            </div>
+            <div class="power-wrapper hidden" id="second-module">
+              <img src="assets/img/power.webp" alt="Add More Power" />
+              <div class="plus-icon">+</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Innovative Energy -->
+    <div class="innovative">
+      <h1 class="innovative-title">Innovative Energy Optimizer</h1>
+      <video autoplay muted playsinline>
+        <source src="assets/videos/innovative.mp4" type="video/mp4" />
+      </video>
+      <div class="innovative-details">
+        <div class="detail">
+          <h1 class="detail-title">What is the Barrel Effect?</h1>
+          <p>
+            In traditional battery packs, your weakest battery affects the
+            entire system. When it's full, all batteries stop charging. When
+            it's empty, all batteries stop discharging.
+          </p>
+        </div>
+        <div class="detail">
+          <h1 class="detail-title">Modular Design, More Power</h1>
+          <p>
+            Each battery pack contains an innovative energy optimizer for
+            independent charging and discharging. That eliminates the Barrel
+            Effect and delivers up to <strong>2000kWh+</strong> power.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
