@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .newsletter-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .newsletter-title {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00B6FF, #00E38C);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 3rem;
+            line-height: 1.2;
+            display: inline-block;
+        }
+        .newsletter-title span {
+            color: #00d58a;
+        }
+        .form-control {
+            border-radius: 30px 0 0 30px;
+            border: none;
+            box-shadow: none;
+            height: 70px;
+            padding-left: 30px;
+            font-size: 1.5rem;
+            min-width: 600px;
+            background-color: #f5f5f5;
+        }
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .btn-subscribe {
+            border-radius: 0 30px 30px 0;
+            background: linear-gradient(90deg, #00c8ff, #00d58a, #00c8ff);
+            background-size: 200% auto;
+            color: white;
+            font-weight: 600;
+            padding: 0 70px;
+            font-size: 1.5rem;
+            border: none;
+            height: 70px;
+            min-width: 300px;
+            animation: gradientMove 5s ease infinite;
+            transition: all 0.3s ease;
+        }
+
+        .btn-subscribe:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 197, 255, 0.4);
+        }
+        .terms {
+            font-size: 1.1rem;
+            margin-top: 30px;
+        }
+        .form-check-input {
+            width: 1.5em;
+            height: 1.5em;
+            margin-top: 0.25em;
+        }
+        .terms a {
+            text-decoration: underline;
+            color: black;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .newsletter-title {
+                font-size: 2.2rem;
+                margin-bottom: 2rem;
+                padding: 0 15px;
+                line-height: 1.1;
+            }
+            
+            .form-control {
+                min-width: 100%;
+                height: 60px;
+                font-size: 1.1rem;
+                border-radius: 30px !important;
+                margin-bottom: 10px;
+            }
+            
+            .btn-subscribe {
+                min-width: 100%;
+                height: 60px;
+                font-size: 1.2rem;
+                border-radius: 30px !important;
+                padding: 0 20px;
+                animation: gradientMove 5s ease infinite;
+            }
+            
+            .terms {
+                font-size: 0.9rem;
+                margin-top: 20px;
+                padding: 0 15px;
+            }
+            
+            form {
+                flex-direction: column;
+                width: 90% !important;
+                max-width: 100% !important;
+                margin: 0 auto;
+            }
+            
+            .form-check-input {
+                width: 1.25em;
+                height: 1.25em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="newsletter-section">
+    <h2 class="newsletter-title">
+        Get the Latest News from <span>Anker SOLIX</span>
+    </h2>
+
+    <form class="d-flex justify-content-center mt-4" style="max-width:600px; width:100%;">
+        <input type="email" class="form-control" placeholder="Enter Your Email">
+        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+    </form>
+
+    <div class="terms form-check d-flex justify-content-center align-items-center gap-2">
+        <input class="form-check-input" type="checkbox" id="termsCheck">
+        <label class="form-check-label" for="termsCheck">
+            I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+        </label>
+    </div>
+</div>
+
+</body>
+</html>
